@@ -14,22 +14,14 @@ module.exports = {
     },
   },
   networks: {
-    zkSyncSepoliaTestnet: {
-      url: "https://sepolia.era.zksync.dev",
-      ethNetwork: "sepolia",
-      zksync: true,
-      chainId: 300,
+    DailyTestnet:{
+      url: "https://testnet-rpc.dailycrypto.me",
+      ethNetwork: "DailyTestnet",
+      zksync: false,
+      chainId: 825,
       verifyURL:
-        "https://explorer.sepolia.era.zksync.dev/contract_verification",
-    },
-    zkSyncMainnet: {
-      url: "https://mainnet.era.zksync.io",
-      ethNetwork: "mainnet",
-      zksync: true,
-      chainId: 324,
-      verifyURL:
-        "https://zksync2-mainnet-explorer.zksync.io/contract_verification",
-    },
+        "https://testnet-explorer.dailycrypto.me/contract_verification",
+    }
   },
   paths: {
     artifacts: "./artifacts-zk",
